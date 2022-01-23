@@ -1,25 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Suspense } from 'react'
+import { Canvas} from '@react-three/fiber'
+import { OrbitControls, Loader } from '@react-three/drei'
 
-function App() {
+import Earth from './components/Earth';
+import Light from './components/Light';
+import Points from './components/Points';
+import Connetctions from './components/Connections';
+
+
+
+const App = function () {
+
+
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+    <Canvas concurent>
+      <ambientLight />
+      <Suspense fallback={null}>
+        <Earth/>
+        <Points/>
+        <Light/>
+        <Connetctions/>
+      </Suspense>
+      <OrbitControls 
+        enablePan={true} 
+        // enableZoom={false} 
+        enableRotate={true} 
+        maxDistance ={2}
+        autoRotate={true} 
+        />
+    </Canvas>
+    <Loader/>
+    </>
+  )
 }
 
 export default App;

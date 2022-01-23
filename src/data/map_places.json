@@ -1,0 +1,51 @@
+{
+    "Dallas": {
+        "cords":[ 32.7767, -96.7970 ],
+        "connections": ["MatoGrosso", "Paraguay", "Bogota"] 
+        
+    },
+    "MatoGrosso": {
+        "cords": [-12.551617, -55.722036]
+    },
+    "Paraguay": {
+        "cords": [-25.253993, -57.572685]
+
+    },
+    "Sidney": {
+        "cords": [-33.872888, 151.208011]
+    },
+    "Botswana": {
+        "cords": [-22.052994, 23.352661],
+        "connections": ["Bryansk", "Iran"] 
+    },
+    "Bryansk": {
+        "cords": [53.257177, 34.412817]
+    },
+    "Iran": {
+        "cords": [31.899524, 54.265247]
+    },
+    "Libya": {
+        "cords": [29.051831, 17.832488],
+        "connections": ["Bryansk", "Iran"] 
+    },
+    "Jeddah": {
+        "cords": [21.558465, 39.224599],
+        "connections": ["MatoGrosso", "Paraguay", "Bogota"] 
+    },
+    "Bogota": {
+        "cords": [4.695831, -74.072431]
+    },
+    "SanFrancisco": {
+        "cords": [37.745525, -122.451310],
+        "connections": ["Salvador", "Sidney"] 
+    },
+    "Salvador": {
+        "cords": [13.573428, -88.551166]
+    },
+    "Indonesia": {
+        "cords": [1.200337, 115.235911],
+        "connections": ["Bryansk", "Iran"] 
+    }
+    
+}
+
